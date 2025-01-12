@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { BarChart2, Home, Menu } from "lucide-react";
-import styles from "./Navbar.module.scss";
+import styles from "./NavBar.module.scss";
 import { Link, useLocation } from "react-router";
 
 const navItems = [
