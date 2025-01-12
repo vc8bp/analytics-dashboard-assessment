@@ -34,6 +34,7 @@ const VehicleTable = ({ data }) => {
         filter: true,
         resizable: true,
         flex: 1, 
+        minWidth: 120
     };
 
     const gridOptions = {

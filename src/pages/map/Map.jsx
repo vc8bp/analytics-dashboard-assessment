@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Map, Marker, Overlay } from "pigeon-maps";
 import styles from "./Map.module.scss";
 
@@ -21,7 +21,7 @@ const PigeonMap = ({ data }) => {
             };
         }
         return null;
-    }).filter(Boolean), [row])
+    }).filter(Boolean), [data])
 
     const totalPages = Math.ceil(locations.length / maxPoints);
     const paginatedLocations = locations.slice( (currentPage - 1) * maxPoints, currentPage * maxPoints );
