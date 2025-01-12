@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import getCsvData from './lib/readCsv'
-import Home from "./pages/Home/Home"
+import Home from "./pages/home/Home"
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Navbar } from './components/navbar/NavBar'
 import VahicalTable from "./pages/tables/VahicalTable"
