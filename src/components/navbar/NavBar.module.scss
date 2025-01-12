@@ -1,0 +1,90 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(var(--background-color), 0.95);
+  backdrop-filter: blur(10px);
+  --supports-backdrop-filter: rgba(var(--background-color), 0.6);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+}
+
+.navbarDesktop {
+  margin-right: 16px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+
+}
+
+.brandText {
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.navLink {
+  transition: color 0.3s;
+}
+
+.activeLink {
+  color: var(--foreground-color);
+}
+
+.inactiveLink {
+  color: rgba(var(--foreground-color), 0.6);
+
+  &:hover {
+    color: rgba(var(--foreground-color), 0.8);
+  }
+}
+
+.menuButton {
+  margin-right: 8px;
+  padding: 0;
+  text-align: center;
+  font-size: 1rem;
+  background: transparent;
+
+  &:hover {
+    background: transparent;
+  }
+
+  &:focus-visible {
+    background: transparent;
+    outline: none;
+  }
+}
+
+.menuIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.sheetContent {
+  padding-right: 0;
+}
+
+
+

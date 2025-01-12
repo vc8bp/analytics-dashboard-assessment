@@ -1,0 +1,10 @@
+:root {
+    --background-color: 255, 255, 255; 
+    --border-color: 220, 220, 220; 
+    --foreground-color: 0, 0, 0;
+    --accent-color: 33, 150, 243;
+    --hover-accent-color: 30, 136, 229; 
+    --muted-color: 150, 150, 150; 
+    --background-muted: 245, 245, 245;
+  }
+  
