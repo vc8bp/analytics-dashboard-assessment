@@ -2,7 +2,7 @@
 const getCsvData = async () => {
     const file = await fetch("/Electric_Vehicle_Population_Data.csv")
     console.log("Fiel loaded")
-    const data = (await file.text()).split("\r\n")
+    const data = (await file.text()).split(/\r\n|\n|\r/)
     console.log({ConveredFile: data})
     let [columns, ...rows] = data.map((row) => row.split(","))
     console.log({columns, rows})
