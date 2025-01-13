@@ -5,11 +5,13 @@ const getCsvData = async () => {
     const data = (await file.text()).split("\r\n")
     console.log({ConveredFile: data})
     let [columns, ...rows] = data.map((row) => row.split(","))
-    
+    console.log({columns, rows})
     const uniqueValues = columns.reduce((acc, col, colIndex) => {
         acc[col] = new Set(rows.map(row => row[colIndex]).filter(Boolean))
         return acc
     }, {})
+
+    console.log({uniqueValues})
 
     rows = rows.map(row => columns.reduce((f, v, i) => {
         f[v] = row[i]
